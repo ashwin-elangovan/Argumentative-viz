@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework #5: Argumentative Vis - CSE 578 - Fall 2022</title>
+    <link rel='stylesheet' type="text/css" href='./css/styles.css'>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src='js/main.js'></script>
+  </head>
+  <body>
+    <br>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+      <div style = "margin-left: 80px">
+        <img id="themeIcon" style="height: 35px; width: 35px">
+      </div>
+    </label>
+    </div>
+    <div id='container'>
+      <div id="box_curve">
+        <h2>Argumentative Vis - Marvel Cinematic Universe vs DC Extended Universe</h2>
+        <h3>Ashwin Elangovan - aelango3@asu.edu</h3>
+      </div>    
+      <br/>
+      <div class='row' style="display: flex;">
+        <h3 style="text-align: center;width: 50%">Top IMDB score over the years</h3>
+        <h3 style="text-align: center;width: 50%">Budget vs Overall Gross</h3>
+      </div>
+        <svg id='dceu'></svg>
+        <svg id='mcu'></svg>
+      <div class='row2' style="display: flex;">
+        <div id="box_curve" style="width: 49%">
+          <p style="text-align: center;">This graph plots IMDB scores over the years and compares the top ratings that are over 8.0.</p>
+        </div>
+        &nbsp &nbsp
+        <div id="box_curve" style="width: 49%">
+          <p style="text-align: center;">This graph compares money spent vs money grossed worldwide in USD where the radius of the bubble corresponds to Metascore.</p>
+        </div>
+      </div>
+      <br>
+      <div id="box_curve">
+        <p style="text-align:center;">
+        <b>Kaggle link: </b><a id="kaggleLink" href="https://www.kaggle.com/leonardopena/marvel-vs-dc" target="_"><u>https://www.kaggle.com/leonardopena/marvel-vs-dc</u></a> 
+        </p>
+      </div>
+      <br/>
+      <div id="box_curve">
+        <h3 style="text-align:left; padding-left: 35px; padding-top: 20px">Overview:</h3>
+        <p style="padding-left: 35px">Marvel vs DC - This is one of the controversial topics among people of all ages. Both of them are involved in a lot of fields like comics, movies, TV shows, merchandise..etc and each one is ahead of the other in a specific field which leads to variable results. In this Assignment, I have chosen to compare MCU (Marvel Cinematic Universe) vs DCEU (DC Extended Universe). The dataset for this comparison is taken from Kaggle and it consists of movies released from 2003 to 2019. The movies that are present in this dataset belong to one of the two universes. I've used JS to pre-process the data retrieved from CSV. For chart generation, I'm using the following attributes - Metascore, IMDB ratings, budget and worldwide gross.
+        </p>
+        <h3 style="text-align:left; padding-left: 35px">Left Graph (Top IMDB score over the years):</h3>
+        <p style="padding-left: 35px">The left graph shows a multi-line chart with year on the X-axis and IMDB score on the Y-axis. The years in which there was a movie release lies in the range of 2003-2019. Here, MCU movies are depicted via red line and DCEU movies are depicted via grey line. In this graph one can interpret that out of the top highest rated movies (score above 8.0) majority of them are from DCEU (The Dark Knight Rises, Joker, The Dark Knight). Though MCU has maintained a score of 7.5 on average, DCEU holds the top spot in terms of highest rating. Hence in this graph DCEU wins.
+        </p>
+        <h3 style="text-align:left; padding-left: 35px">Right Graph (Budget vs Overall Gross):</h3>
+        <p style="padding-left: 35px">The right graph shows a scatter plot with the budget in Millions of Dollars on the X-axis and the Overseas gross in Millions of Dollars on the Y-axis. Also, in the scatter plot, the radius of the bubble is determined by the movie's Metascore rating. From this graph, it can be clearly seen that MCU's returns are much higher than DCEU's. For MCU, movies like Avengers: Endgame the returns are nearly 8x and at the same time, there are some big flops in DCEU like Jonah Hex which earned just 10.9M against a 47M budget. Movies like these significantly affected the overall position of DCEU. Hence in this graph MCU wins.
+        </p>
+        <h3 style="text-align:justify; padding-left: 35px">Rhetorical techniques used:</h3>
+        <p>
+          <ul>
+            <li style="text-align:justify; padding-right: 35px">
+              <b>Omission:</b> In both graphs, attributes from the dataset like the Minutes, Opening Weekend USA, and Gross USA have been omitted as they are not necessary for the argument.
+            </li>
+            <li style="text-align:justify; padding-right: 35px">
+              <b>Anchoring:</b> In the left graph, a horizontal region highlight has been added to highlight the points that are considered and who is being supported in that chart.
+            </li>
+            <li style="text-align:justify; padding-right: 35px">
+              <b>Data provenance:</b> In both left and right graphs, data from IMDB and Metascore is used to differentiate and identify the winners thereby using data provenance technique.
+            </li>
+            <li style="text-align:justify; padding-right: 35px">
+              <b>Cultural codes:</b> In both graphs, colors are used to represent the movies (red for MCU movies and grey for DCEU movies) similar to the base color of their respective logos.
+            </li>
+          </ul>
+        </p>
+        <h3 style="text-align:left; padding-left: 35px;">Personal position on the topic:</h3>
+        <p style="padding-left: 35px; padding-bottom: 25px; justify-content: center;">
+          My personal position on this comparison is that MCU is the winner. Most of their movies are profitable at least giving a return of 1.5x and their IMDB ratings are consistently above 7. Though DCEU tops MCU in terms of the highest score in ratings, they are not consistent in getting great scores. Only a few DCEU movies gave a lot of returns and secured good ratings. Also, MCU has consistently produced and released more movies throughout the years compared to DCEU. For these reasons, I think MCU is much better than DCEU.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
