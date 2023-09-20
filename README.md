@@ -1,4 +1,4 @@
-# Argumentative Visualization Report
+# Argumentative Visualization
 
 ## Overview
 In this report, I have created two data visualizations that argue for opposing viewpoints on the controversial topic of "Marvel Cinematic Universe (MCU) vs. DC Extended Universe (DCEU)." Both visualizations use the same dataset, which includes movies released by these two cinematic universes from 2003 to 2019. The dataset attributes used for comparison are Metascore ratings, IMDB ratings, budget, and worldwide gross.
