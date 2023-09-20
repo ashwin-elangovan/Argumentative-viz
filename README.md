@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/75065c33-c1b8-49da-8925-0026af1f2bf3/deploy-status)](https://app.netlify.com/sites/dv-argumentative-vis/deploys)
+
 # Argumentative Visualization
 
 ## Overview
